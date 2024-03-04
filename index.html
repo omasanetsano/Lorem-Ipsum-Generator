@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Lorem Ipsum Generator</title> <!-- The title of the webpage is displayed on the browser's tab -->
+   <link rel="stylesheet" href="index.css"> <!-- The link tag is used to link an external CSS file to the HTML document -->
+ </head>
+ <body>
+   <div class="container"> <!-- The container class is used for styling the content within it -->
+     <h1>Lorem Ipsum Generator</h1> <!-- The h1 tag is used to display the main heading of the page -->
+
+     <div> <!-- This div is used to group related elements together -->
+       <label for="num-paragraphs">Number of paragraphs:</label> <!-- The label tag is used to associate a form element with a description -->
+       <input type="number" id="num-paragraphs" min="1" max="10" value="1" /> <!-- The input tag is used to create a form control for user input -->
+     </div>
+
+     <div> <!-- This div is used to group related elements together -->
+       <label for="num-words">Number of words per paragraph:</label> <!-- The label tag is used to associate a form element with a description -->
+       <input type="number" id="num-words" min="1" max="100" value="10" /> <!-- The input tag is used to create a form control for user input -->
+     </div>
+
+     <div> <!-- This div is used to group related elements together -->
+       <button onclick="generateLorem()">Generate Lorem Ipsum</button> <!-- The button tag is used to create a clickable button -->
+     </div>
+
+     <div id="output"></div> <!-- This div is used to display the generated Lorem Ipsum text -->
+   </div>
+   <script src="script.js"></script> <!-- The script tag is used to include an external JavaScript file in the HTML document -->
+ </body>
+</html>
